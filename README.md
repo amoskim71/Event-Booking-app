@@ -11,4 +11,19 @@ Follow bellow steps to run this project
 
 Screenshots
 
-![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1 (1).png)
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(1).png)
+
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(2).png)
+
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(3).png)
+
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(4).png)
+
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(5).png)
+
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(6).png)
+
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(7).png)
+
+![alt text](https://raw.githubusercontent.com/mksd0398/Event-Booking-app/master/img/1%20(8).png)
+
