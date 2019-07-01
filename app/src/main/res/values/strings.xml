@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Brain Box Media</string>
+    <string name="welcome_msg">We\'re super excited to have you on board !!</string>
+    <string name="hey">Hey !!</string>
+    <string name="large_text">
+       "We offer 3d Exhibitions stall design, Exhibitions Graphic design, Exhibitions Stall Fabrication, Exhibitions Stand Construction, Portable Exhibition Stall, Modular Exhibition Kit etc in a highly customized manner. We are manufacturer, supplier and service provider with extensive experience in Exhibition Industry.\n"
+
+"Exhibitions we do Exhibition Stall Designing and Fabricators all over the world… experienced designers and builders ensure to make an impact for your brand in the exhibition. Our creative team will work closely with you to develop functional exhibit panels/ creative´s for posters. We also undertake turnkey projects of refurbishment in a retail store including banners, hoardings, danglers , Branding on sun board, vinyl etc. along with architectural and interior solutions like structural work, paneling, partitions, ceiling, flooring, paintings and decorating.\n"
+
+"Design services: Branding, Concepts and Content Writing, Newsletter Development, Presentation Development, Campaign Development, Designing and Printing, Digital Publishing, Translation\n"
+
+"Where are we?\n"
+"We are present in Pan India with fabrication setups in Banglore,India, Delhi, Chennai, Hyderabad, and Ahmedabad. Offering our extensive and highly professional services in Pan India. We are the most trusted names in the industry and are backed by our vast experience in Pan India.\n"
+
+    </string>
+    <string name="event_image">event image</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="booking">Book</string>
+    <string name="event">Events</string>
+    <string name="wedding">Wedding</string>
+    <string name="services">Services</string>
+    <string name="exhibition">Exhibition</string>
+    <string name="career">Career</string>
+    <string name="gallery">gallery</string>
+    <string name="home">Home</string>
+
+    <string name="wedding_quote1">"Every wedding is a unique package that fits you as perfectly as your new engagement ring"</string>
+
+    <string name="profile_quote2">"SLEEP ALL day | PARTY ALL night | NEVER GROW old | NEVER die"</string>
+    <string name="bookings_history">Bookings History</string>
+    <string name="latest_event">Latest Events</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="n_number">"Every kind of Event or planning related"
+        "Services are provided by us"
+    </string>
+    <string name="its_al_about_you">
+        "After All Its All About You"
+    </string>
+    <string name="find_us">Find Us</string>
+    <string name="email_icon">email icon</string>
+    <string name="phone_icon">phone icon</string>
+    <string name="web_icon">web icon</string>
+    <string name="know_more_about_the_event">Know more about the event</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBZgx_NAjJ4y-q6PI_Vn7CZT5dS3rtGXNs</string>
+    <string name="are_you_ready_to_rock">Are you ready to Rock !!</string>
+    <string name="wedding_planner">Wedding Planner</string>
+    <string name="coming_soon">Coming soon !!</string>
+    <string name="party_like_it_s_1999_aged_cabernet_special">Party Like it’s 1999 Aged Cabernet Special</string>
+    <string name="great_discounts">Great Discounts</string>
+    <string name="take_your_pick_from_the_most_amazing_events_happening_around_you">Take your pick from the most amazing events happening around you</string>
+    <string name="instant_booking">Instant Booking</string>
+    <string name="select">You can select multiple options as per your choice</string>
+    <string name="proceed">Proceed to pay</string>
+    <string name="arrow"><![CDATA[<-]]></string>
+    <string name="exihibition_qoute">Creativity is allowing yourself to make mistakes Art is knowing which ones to keep</string>
+    <string name="confirm">Confirm</string>
+    <string name="dummy">
+        "stag price one ticket\n"
+        "couple price two\n"
+        "stag price one ticket\n"
+    </string>
+    <string name="confirm_your_reservations">Confirm your reservations</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="total_price">Total Price :</string>
+    <string name="price">Price :</string>
+    <string name="event_name">Event Name</string>
+    <string name="name_error">please enter your name</string>
+    <string name="scroll"><![CDATA[<- scroll ->]]></string>
+    <string name="expired">Expired</string>
+    <string name="cover">cover</string>
+    <string name="profilepic">profilePic</string>
+    <string name="click_here_to_start_booking">click here to start booking</string>
+</resources>

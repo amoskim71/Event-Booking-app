@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_welcome_progress_bar_width">177dp</dimen>
+    <dimen name="activity_welcome_logo_width">158dp</dimen>
+    <dimen name="activity_welcome_logo_height">168dp</dimen>
+    <dimen name="activity_login_text1">40sp</dimen>
+    <dimen name="activity_login_text2">17sp</dimen>
+    <dimen name="text_view_width">190dp</dimen>
+    <dimen name="button_holder_width">220dp</dimen>
+    <dimen name="event_name_size">40sp</dimen>
+    <dimen name="other_detail_size">15sp</dimen>
+    <dimen name="app_bar_size">130dp</dimen>
+    <dimen name="text_size_home">90sp</dimen>
+    <dimen name="card_view_button_height">130dp</dimen>
+    <dimen name="email_size">20sp</dimen>
+    <dimen name="phone_no_size">20sp</dimen>
+    <dimen name="about_email_size">20sp</dimen>
+    <dimen name="price_size">20sp</dimen>
+    <dimen name="second_price_size">15sp</dimen>
+    <dimen name="size_wedding_slide2">20sp</dimen>
+    <dimen name="middle_text_size">55sp</dimen>
+
+    <dimen name="view_pager_height">140dp</dimen>
+    <dimen name="payment_text_size">20sp</dimen>
+    <dimen name="text_size">15sp</dimen>
+</resources>

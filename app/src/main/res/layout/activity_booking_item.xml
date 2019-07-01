@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ticket_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/timeburnerbold"
+        android:textSize="@dimen/second_price_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ticket_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="Ticket Name" />
+
+    <TextView
+        android:id="@+id/ticket_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/timeburnerbold"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/ticket_price"
+        app:layout_constraintStart_toStartOf="parent"
+        tool:text="Ticket details" />
+
+    <TextView
+        android:id="@+id/ticket_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/timeburnerbold"
+        android:textSize="@dimen/second_price_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/each_total"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tool:text="Rs 1900" />
+
+    <TextView
+        android:id="@+id/each_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/timeburnerbold"
+        android:textSize="@dimen/second_price_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tool:text="detail per ticket" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style_stroke"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="-"
+            android:textSize="@dimen/price_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/selected_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/timeburnerbold"
+            android:text="0"
+            android:textSize="@dimen/price_size" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style_stroke"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="+"
+            android:textSize="@dimen/price_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

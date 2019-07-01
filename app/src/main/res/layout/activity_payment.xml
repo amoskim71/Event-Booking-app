@@ -1,0 +1,353 @@
+<!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/progressBar3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_black"
+        android:elevation="20dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/wolf_in_the_city"
+                android:text="Live For Today, Plan for tomorrow, Party tonight"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPaddingBottom="5dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingRight="15dp"
+                app:contentPaddingTop="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/timeburnerbold"
+                        android:gravity="center"
+                        android:text="Please enter the details to be on your exclusive ticket"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/name_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="false">
+
+                        <EditText
+                            android:id="@+id/name_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:nextFocusDown="@+id/card_name_et"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/email_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="false">
+
+                        <EditText
+                            android:id="@+id/email_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:nextFocusDown="@+id/card_name_et"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mobile_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="false">
+
+                        <EditText
+                            android:id="@+id/mobile_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Phone"
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:nextFocusDown="@+id/card_name_et"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPaddingBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingRight="15dp"
+                app:contentPaddingTop="10dp"
+                card_view:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.4">
+
+                    <TextView
+                        android:id="@+id/event_name_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/timeburnerbold"
+                        android:text="@string/event_name"
+                        android:textSize="25sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/event_poster_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/event_button"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/event_name_payment" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/event_poster_payment">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:text="Sub Total : "
+                                android:textSize="@dimen/payment_text_size" />
+
+                            <TextView
+                                android:id="@+id/total_price"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:gravity="end"
+                                android:text="Rs 2000"
+                                android:textAlignment="textEnd" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:text="Venue : "
+                                android:textSize="@dimen/payment_text_size" />
+
+                            <TextView
+                                android:id="@+id/venue"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:gravity="end"
+                                android:text="Rs 2000"
+                                android:textAlignment="textEnd" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:text="Time : "
+                                android:textSize="@dimen/payment_text_size" />
+
+                            <TextView
+                                android:id="@+id/time"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:gravity="end"
+                                android:text="Rs 2000"
+                                android:textAlignment="textEnd" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:text="Date : "
+                                android:textSize="@dimen/payment_text_size" />
+
+                            <TextView
+                                android:id="@+id/date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/timeburnerbold"
+                                android:gravity="end"
+                                android:text="Rs 2000"
+                                android:textAlignment="textEnd" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/timeburnerbold"
+                            android:text="note: Venue rules applied"
+                            android:textSize="@dimen/payment_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ticket_details_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/timeburnerbold"
+                        android:text="@string/dummy"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                    <Button
+                        android:id="@+id/pay_now_button"
+                        style="@style/AppTheme.Button"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/pay_now"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.495"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ticket_details_payment">
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/ticket_details_payment"
+                            card_view:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/terms_and_conditions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/timeburnerbold"
+                            android:gravity="end"
+                            android:text="terms and conditions"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/payment_text_size" />
+                    </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

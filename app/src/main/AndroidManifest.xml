@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.brainboxmedia">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:icon="@mipmap/ic_launch"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="brainboxmedia.in"
+                    android:pathPrefix="/brainboxmedia"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.PhoneAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ExhibitionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CareerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ServicesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".EventsDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".BookingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".paymentgateway.PaymentMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".TicketGeneratorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileCompeletion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CategorizedGalleryActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_layout_two"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/hey"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/activity_login_text1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/text_view_width"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/timeburnerbold"
+        android:text="@string/welcome_msg"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/activity_login_text2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/FirebaseUI.AuthMethodPicker.ButtonHolder"
+        android:layout_width="@dimen/button_holder_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="119dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.firebase.ui.auth.util.ui.SupportVectorDrawablesButton
+            android:id="@+id/phone_button"
+            style="@style/FirebaseUI.Button.AccountChooser.PhoneButton"
+            android:fontFamily="@font/timeburnerbold"
+            android:text="@string/fui_sign_in_with_phone" />
+
+        <com.firebase.ui.auth.util.ui.SupportVectorDrawablesButton
+            android:id="@+id/google_button"
+            style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
+            android:fontFamily="@font/timeburnerbold"
+            android:text="@string/fui_sign_in_with_google" />
+
+        <com.firebase.ui.auth.util.ui.SupportVectorDrawablesButton
+            android:id="@+id/facebook_button"
+            style="@style/FirebaseUI.Button.AccountChooser.FacebookButton"
+            android:fontFamily="@font/timeburnerbold"
+            android:text="@string/fui_sign_in_with_facebook"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/pandp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/timeburnerbold"
+                android:text="I agree to the privacy policy"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="12dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/cover"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/user_profile_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="138dp"
+                android:clickable="true"
+                android:contentDescription="@string/profilepic"
+                android:elevation="15dp"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_logo" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/header_cover_image"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:paddingBottom="24dp">
+
+                <TextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/timeburnerbold"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="84dp"
+                    android:fontFamily="@font/timeburnerbold"
+                    android:text="@string/find_us"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_name"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <ImageView
+                        android:id="@+id/fb_link"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_facebook" />
+
+                    <ImageView
+                        android:id="@+id/google_link"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_google_plus" />
+
+                    <ImageView
+                        android:id="@+id/twitter_link"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_twitter" />
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_layout"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/email_icon"
+                        android:src="@drawable/ic_email_black_24dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:layout_editor_absoluteY="10dp" />
+
+                    <TextView
+                        android:id="@+id/email_brain_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/timeburnerbold"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/about_email_size"
+                        tools:layout_editor_absoluteX="92dp"
+                        tools:layout_editor_absoluteY="31dp"
+                        tools:text="nidhikhan0397@gmail.com" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/phone_icon"
+                        android:src="@drawable/ic_phone"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="50dp" />
+
+                    <TextView
+                        android:id="@+id/phone_brain_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoLink="phone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/timeburnerbold"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/about_email_size"
+                        tools:layout_editor_absoluteX="261dp"
+                        tools:layout_editor_absoluteY="89dp"
+                        tools:text="+91 8512300321" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/web_icon"
+                        android:src="@drawable/ic_web"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="90dp" />
+
+                    <TextView
+                        android:id="@+id/website_brain_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/timeburnerbold"
+                        android:textColor="@color/light_blue"
+                        android:textSize="15dp"
+                        tools:text="brainboxmedia.in" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/timeburnerbold"
+                    android:text="About us"
+                    android:textSize="@dimen/about_email_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/timeburnerbold"
+                    android:textSize="@dimen/about_email_size"
+                    tools:text="@string/large_text" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+

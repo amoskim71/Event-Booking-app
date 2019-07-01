@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/AppTheme.Button</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+
+    <style name="appBarTheme">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/translucent_black</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:buttonStyle">@style/AppTheme.Button</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TransparentBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="MyAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.pink" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryDark">@color/pink_dark</item>
+        <item name="colorAccent">@color/pink_accent</item>
+        <item name="colorButtonNormal">@color/pink_primary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_pink</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="AlertDialogStyle_pink" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/pink_accent</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+</resources>

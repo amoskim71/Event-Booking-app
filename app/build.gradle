@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'bbm@vivek'
+            keyPassword 'BBM@vivek0397'
+            storeFile file('C:/Users/mayank KSD/keystore/androidksyBBM.jks')
+            storePassword 'BBM@vivek0397'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "in.brainboxmedia"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 6
+        versionName '6.0'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            setShrinkResources(true)
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services-plus:11.8.0'
+    implementation 'com.android.support:design:27.0.2'
+    //firebase libs
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.firebaseui:firebase-ui-auth:3.1.3'
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+    //gallerys
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    //for progress
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation('com.payumoney.sdkui:plug-n-play:1.1.0') {
+        transitive = true
+        exclude module: 'payumoney-sdk'
+    }
+    implementation 'com.payumoney.core:payumoney-sdk:7.1.0'
+    //crashlytics
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+        transitive = true
+    }
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    implementation 'com.github.nisrulz:screenshott:2.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

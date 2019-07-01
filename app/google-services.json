@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1047229681460",
+    "firebase_url": "https://brain-box-media-123.firebaseio.com",
+    "project_id": "brain-box-media-123",
+    "storage_bucket": "brain-box-media-123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047229681460:android:7bdbf0dc238c7ce3",
+        "android_client_info": {
+          "package_name": "in.brainboxmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047229681460-ouq9r1t3rs6pf25ioocg34kn3iqs4nku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.brainboxmedia",
+            "certificate_hash": "a9a227cbae95c3a643b20b3501d333d03cb4cdb2"
+          }
+        },
+        {
+          "client_id": "1047229681460-gmiqt3k1mdfnld0tej3en0bq77dbuk3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARlpiwHwFW6O8QBZB6Gh6PPQjwHztlbYk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047229681460-gmiqt3k1mdfnld0tej3en0bq77dbuk3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

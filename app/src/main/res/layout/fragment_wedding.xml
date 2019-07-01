@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_button_wedding"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_wedding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/wedding_fragement_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:fontFamily="@font/timeburnerbold"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_wedding_slide2"
+            android:textStyle="bold"
+            tool:text="Destination Selector" />
+
+        <TextView
+            android:id="@+id/wedding_fragement_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sweet"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/middle_text_size"
+            tool:text="Through our Destination search engine choose your dream Destination" />
+
+        <TextView
+            android:id="@+id/wedding_fragement_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/timeburnerbold"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_wedding_slide2"
+            android:textStyle="bold"
+            tool:text="Because Love recognizes no barriers." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

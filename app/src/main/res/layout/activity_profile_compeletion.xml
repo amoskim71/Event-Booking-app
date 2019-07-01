@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/profile_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/timeburnerbold"
+        android:text="Please complete your profile before proceeding and we assure that your profile is safe on our cloud based platform"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_next_profile"
+        android:layout_below="@id/profile_text1"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/first_name_profile_til"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:errorEnabled="false">
+
+            <EditText
+                android:id="@+id/first_name_profile_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/card_name_et"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/last_name_profile_til"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteY="53dp">
+
+            <EditText
+                android:id="@+id/last_name_profile_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/card_name_et"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_profile_til"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteY="125dp">
+
+            <EditText
+                android:id="@+id/email_profile_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/card_name_et"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobile_profile_til"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteY="337dp">
+
+            <EditText
+                android:id="@+id/mobile_profile_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Phone"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/card_name_et"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="505dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/timeburnerbold"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Others" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/timeburnerbold"
+        android:text="@string/next"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_skip_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/trans_black"
+        android:fontFamily="@font/timeburnerbold"
+        android:text="@string/skip"
+        android:textColor="@android:color/black" />
+</RelativeLayout>

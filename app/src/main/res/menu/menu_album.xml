@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_booking"
+        android:orderInCategory="100"
+        android:title="Book" />
+
+    <item
+        android:id="@+id/action_fav"
+        android:orderInCategory="101"
+        android:title="Add to Favourites" />
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This program was written by Mayank khan singh dsouza
+    contact at mayank0398@gmail.com
+    Intended for the Brain Box Media commercial use
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/pink" />
+    <corners android:radius="20dp" />
+    <padding
+        android:bottom="15dp"
+        android:left="15dp"
+        android:right="15dp"
+        android:top="15dp" />
+</shape>
